@@ -1,4 +1,3 @@
 # clases
-Repositorio para la clase de Fundamentos de Programación
-Prueba remota
-Prueba
+Repositorio para la clase de Fundamentos de Programación  
+Prueba nueva
