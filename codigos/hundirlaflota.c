@@ -107,7 +107,8 @@ int main()
                 }
                 printf("\n");
                 printf ("Ahora coloca tus barcos.\n");
-                printf ("Indica FILA y COLUMNA y pulsa ENTER. Por ejemplo CF.\n");
+                printf ("Indica FILA y COLUMNA y ORIENTACIÓN (H/V) y pulsa ENTER. Por ejemplo CFV.\n");
+                //SIN EMBARGO, MIS CONOCIMIENTOS NO ME PERMITEN CONTINUAR PROGRAMANDO, DE MOMENTO.
                 printf ("Si deseas salir y regresar al menú escribe s.\n");
                 char SALIR;
                 scanf(" %c", &SALIR);
