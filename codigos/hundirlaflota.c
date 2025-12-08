@@ -1,6 +1,5 @@
 //Menú inicial del juego hundir la flota.
 #include <stdio.h>
-#include <stdlib.h>
 
 void limpiarPantalla() {
     printf("\033[2J\033[H");
@@ -25,6 +24,7 @@ int main()
             printf ("Gracias por jugar.\n Pulse cualquier tecla para salir\n");
             getchar ();
             getchar (); 
+            limpiarPantalla();
             break;
         }
         if (respuestamenu == 2) {
@@ -59,7 +59,7 @@ int main()
                 };
 
                 //EN ESTE PASO SE GENERARÍA UNA MATRIZ ALEATORIA PARA LA COMPUTADORA PERO SE OBVIA POR FALTA
-                //DE CONOCIMIENTOS
+                //DE CONOCIMIENTOS A LA HORA DE SITUAR LOS BARCOS DE MANERA ALEATORIA.
 
                 //SE GENERA AHORA LA MATRIZ FALSA QUE EL JUGADOR VERÁ COMO TABLERO ENEMIGO
                 char FAKE[13][13] = {
@@ -81,10 +81,10 @@ int main()
                 printf("\n");
                 printf ("Este es tu tablero:\n");
                 printf ("\n");
-                  // Bucle for para recorrer las filas (primera dimensión)
+                  // Bucle para filas
                 for (char i = 0; i < 13; i++)
                 {
-                    // Bucle for para recorrer las columnas (segunda dimensión)
+                    // Bucle para columnas
                     for (char j = 0; j < 13; j++)
                     {
                     printf("%c, ", PLAYER[i][j]);
@@ -95,10 +95,10 @@ int main()
                 printf("Este es el tablero enemigo:\n");
                 printf("\n");
 
-                  // Bucle for para recorrer las filas (primera dimensión)
+                  // Bucle para filas
                 for (char i = 0; i < 13; i++)
                 {
-                    // Bucle for para recorrer las columnas (segunda dimensión)
+                    // Bucle para columnas
                     for (char j = 0; j < 13; j++)
                     {
                     printf("%c, ", FAKE[i][j]);
@@ -108,7 +108,7 @@ int main()
                 printf("\n");
                 printf ("Ahora coloca tus barcos.\n");
                 printf ("Indica FILA y COLUMNA y ORIENTACIÓN (H/V) y pulsa ENTER. Por ejemplo CFV.\n");
-                //SIN EMBARGO, MIS CONOCIMIENTOS NO ME PERMITEN CONTINUAR PROGRAMANDO, DE MOMENTO.
+                //SIN EMBARGO, MIS CONOCIMIENTOS NO ME PERMITEN CONTINUAR PROGRAMANDO ESTA PARTE, DE MOMENTO.
                 printf ("Si deseas salir y regresar al menú escribe s.\n");
                 char SALIR;
                 scanf(" %c", &SALIR);
