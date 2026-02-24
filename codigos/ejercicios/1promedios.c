@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float primero, segundo, tercero;
+    float primero, segundo, tercero; //holaholahola
     double promedio;
 
     printf("Primero:\n");
